@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'material-poc';
+  spinner = false;
+  loadData(){
+    this.spinner = true;
+    setTimeout(()=>{
+      this.spinner = false;
+    },5000);
+  }
 }
